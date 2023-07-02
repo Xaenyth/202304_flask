@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabla de usuarios</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='tabla.css') }}">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Nombre completo</th>
+        </tr>
+        {% for user in users %}
+            <tr>
+                <td>{{ user.first_name }}</td>
+                <td>{{ user.last_name }}</td>
+                <td>{{ user.first_name }} {{ user.last_name }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

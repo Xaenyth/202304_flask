@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resultados</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styler.css') }}">
+</head>
+
+<body>
+    <div class="result-container">
+        <h1>Resultados del formulario</h1>
+
+        <p>Nombre: {{ nombre }}</p>
+        <p>Localización: {{ localizacion }}</p>
+        <p>Lenguaje favorito: {{ lenguaje }}</p>
+        <p>Comentario: {{ comentario }}</p>
+    </div>
+</body>
+
+</html>

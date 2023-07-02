@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+p {
+    color: #666;
+    font-size: 18px;
+}
+form {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+
+#botonIncrementar {
+    margin-right: 10px;
+}
+#botonReiniciar {
+    margin-right: 10px;
+}

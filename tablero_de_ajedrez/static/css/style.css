@@ -1,0 +1,21 @@
+.tablero {
+    border-collapse: collapse;
+}
+
+.tablero td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.lightblue {
+    background-color: lightblue;
+}
+
+.blueviolet {
+    background-color: blueviolet;
+}
+
+h1 {
+    text-align: center;
+}

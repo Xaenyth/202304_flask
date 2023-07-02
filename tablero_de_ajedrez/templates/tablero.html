@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tablero de ajedrez</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Tablero de ajedrez</h1>
+    <table class="tablero">
+        {% for row in range(filas) %}
+            <tr>
+                {% for col in range(columnas) %}
+                    {% if (row + col) % 2 == 0 %}
+                        <td class="lightblue"></td>
+                    {% else %}
+                        <td class="blueviolet"></td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

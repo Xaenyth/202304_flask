@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contador de visitas</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Contador</h1>
+    <p>{{ contador }} veces visitadas</p>
+    <form action="{{ url_for('increment') }}" method="GET">
+        <button type="submit">+2</button>
+    </form>
+    <form action="{{ url_for('reset') }}" method="GET">
+        <button type="submit">Reiniciar</button>
+    </form>
+</body>
+</html>
